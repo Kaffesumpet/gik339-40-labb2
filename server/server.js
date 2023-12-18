@@ -24,8 +24,6 @@ server.get("/users", (req, res) => {
       res.send(rows);
     }
   });
-  // Två argument, req och res
-  // res.send("Välkommen till min första GET-route!");
 });
 
 const port = 3000;
