@@ -12,6 +12,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #e2bdbd;
   font-family: sans-serif; /* Oracle SQL font */
   font-size: 1.1rem;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #252525;
+  color: white;
 }

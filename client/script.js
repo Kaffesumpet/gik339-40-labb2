@@ -4,6 +4,7 @@ async function fetchUserData() {
   try {
     const response = await fetch(serverUrl);
     const userData = await response.json();
+    console.log(userData);
     return userData;
   } catch (error) {
     console.error("Error fetching user data:", error);
@@ -43,11 +44,11 @@ async function displayUsers() {
     });
 
     const section = document.createElement("section");
-    section.classList.add("user-section"); 
+    section.classList.add("user-section");
     section.appendChild(userTable);
 
     const main = document.querySelector("main");
-    main.appendChild(section); 
+    main.appendChild(section);
   } catch (error) {
     console.error("Error displaying users:", error);
   }
