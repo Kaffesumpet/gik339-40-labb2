@@ -1,5 +1,7 @@
 const serverUrl = "http://localhost:3000/users";
 
+/* At its core this code fetches user data from a server, dynamically creates an HTML table to display the data, and adds it to the webpage. In case of any errors during fetching or displaying the data, it catches and logs the errors. */
+
 async function fetchUserData() {
   try {
     const response = await fetch(serverUrl);

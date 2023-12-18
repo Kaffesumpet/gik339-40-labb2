@@ -3,6 +3,8 @@ const server = express();
 
 const sqlite3 = require("sqlite3").verbose();
 
+/* This code initializes an Express server, configures middleware for JSON, URL-encoded data, and Cross-Origin Resource Sharing (CORS). It sets up an endpoint (/users) to retrieve all user records from an SQLite database and listens on port 3000 for incoming connections. The code handles potential errors during the database query and provides appropriate HTTP responses. */
+
 server
   .use(express.json())
   .use(express.urlencoded({ extended: false }))
