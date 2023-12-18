@@ -1,11 +1,32 @@
+body {
+  background-color: #0d2927;
+  background-image: url("https://media.giphy.com/media/LzIg4hVdQADA7m2sfK/giphy.gif"),
+    url("https://media.giphy.com/media/gH2bKIakvLuW4/giphy.gif");
+  background-repeat: repeat, repeat;
+  background-position: center center, top left;
+  background-blend-mode: screen, overlay;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 .heading {
   font-family: monospace;
-  font-size: 72px;
+  font-size: 5rem;
   font-weight: bold;
   text-align: center;
-  color: #e2bdbd;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-  margin-bottom: 72px;
+  color: #ffffff;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
+}
+
+.santa-hat-container {
+  position: absolute;
+  top: 6.5rem;
+  right: 30%;
+}
+
+.santa-hat {
+  width: 7rem; /* Adjust the size as needed */
+  height: 7rem; /* Adjust the size as needed */
 }
 
 .user-section {
@@ -24,8 +45,8 @@ table {
 
 th,
 td {
-  border: 1px solid #000000;
-  padding: 8px;
+  border: 0.1rem solid #000000;
+  padding: 0.8rem;
   text-align: center;
 }
 
@@ -34,14 +55,13 @@ th {
   color: white;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-body {
-  background-color: #0d2927;
-  background-image: 
-  url('https://media.giphy.com/media/LzIg4hVdQADA7m2sfK/giphy.gif'),
-  url('https://media.giphy.com/media/gH2bKIakvLuW4/giphy.gif');
-  background-repeat: repeat, repeat;
-  background-position: center center, top left;
-  background-blend-mode: screen, overlay;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+.love-message {
+  background-color: #ffffff;
 }
