@@ -8,5 +8,10 @@
   margin-bottom: 72px;
 }
 
-.user-table {
+.user-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif; /* Oracle SQL font */
+  font-size: 1.1rem;
 }

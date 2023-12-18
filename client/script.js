@@ -42,8 +42,12 @@ async function displayUsers() {
       userTable.appendChild(userRow);
     });
 
+    const section = document.createElement("section");
+    section.classList.add("user-section"); 
+    section.appendChild(userTable);
+
     const main = document.querySelector("main");
-    main.appendChild(userTable);
+    main.appendChild(section); 
   } catch (error) {
     console.error("Error displaying users:", error);
   }
