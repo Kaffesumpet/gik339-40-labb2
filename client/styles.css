@@ -21,12 +21,13 @@ body {
 }
 
 .santa-hat-container {
-  position: absolute;
-  top: 6.5rem;
-  right: 30%;
+  position: relative;
 }
 
 .santa-hat {
+  position: absolute;
+  top: 17%;
+  left: 0;
   width: 7rem;
   height: 7rem;
 }
