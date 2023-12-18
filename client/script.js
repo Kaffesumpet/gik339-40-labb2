@@ -38,10 +38,8 @@ async function displayUsers() {
         <td>${user.firstName}</td>
         <td>${user.lastName}</td>
         <td>${user.username}</td>
-        <td>${user.color}</td>
+        <td style="background-color: ${user.color};">${user.color}</td>
       `;
-
-      userRow.style.backgroundColor = user.color;
       userTable.appendChild(userRow);
     });
 

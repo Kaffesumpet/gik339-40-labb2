@@ -27,32 +27,37 @@ body {
 }
 
 .santa-hat {
-  width: 7rem; /* Adjust the size as needed */
-  height: 7rem; /* Adjust the size as needed */
+  width: 7rem;
+  height: 7rem;
 }
 
 .user-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif; /* Oracle SQL font */
+  font-family: sans-serif;
   font-size: 1.1rem;
 }
 
-table {
+.user-table {
   width: 50%;
   border-collapse: collapse;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
-th,
-td {
+.user-table tr:nth-child(even) {
+  background-color: #dde0ee;
+}
+
+.user-table th,
+.user-table td {
   border: 0.1rem solid #000000;
   padding: 0.8rem;
   text-align: center;
 }
 
-th {
+.user-table th {
   background-color: #252525;
   color: white;
 }
@@ -65,5 +70,7 @@ th {
 }
 
 .love-message {
-  background-color: #ffffff;
+  background-color: #dde0ee;
+  padding: 1rem;
+  border-radius: 1rem;
 }
